@@ -4,6 +4,37 @@
 #include "framework.h"
 #include "rpc.h"
 
+#include "protos/client.grpc.pb.h"
+#include "grpc++/grpc++.h"
+
+
+using namespace google::protobuf;
+class Client {
+public:
+   
+    Client(std::shared_ptr<grpc::Channel> channel) : stub_(window::Window::NewStub(channel)) {}
+
+    int32 MoveWindow(HWND win, int32 left, int32 top, int32 width, int32 height) {
+        window::MoveMessage request;
+        request.set_hwnd((int32)win);
+        request.set_left(left);
+        request.set_top(top);
+        request.set_width(width);
+        request.set_height(height);
+
+        window::ResponseMessage response;
+
+        grpc::ClientContext context;
+        auto status = stub_->MoveWindow(&context, request, &response);
+        if (status.ok()) return response.result();
+        return -1;
+    }
+
+private:
+    std::unique_ptr<window::Window::Stub> stub_;
+};
+
+
 #define MAX_LOADSTRING 100
 
 // 全局变量:
@@ -15,7 +46,6 @@ WCHAR szWindowClass[MAX_LOADSTRING];            // 主窗口类名
 ATOM                MyRegisterClass(HINSTANCE hInstance);
 BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
-INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
 
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
@@ -125,18 +155,23 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
     switch (message)
     {
+    case WM_CREATE: {
+       
+    } break;
     case WM_COMMAND:
         {
             int wmId = LOWORD(wParam);
             // 分析菜单选择:
             switch (wmId)
             {
-            case IDM_ABOUT:
-                DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hWnd, About);
-                break;
-            case IDM_EXIT:
-                DestroyWindow(hWnd);
-                break;
+            case IDM_EXIT: {
+                std::thread thread([&]() {
+                    Client client(grpc::CreateChannel("localhost:50051", grpc::InsecureChannelCredentials()));
+                    auto result = client.MoveWindow(hWnd, 10, 10, 200, 200);
+                    int a = 0;
+                });
+                thread.detach();
+            } break;
             default:
                 return DefWindowProc(hWnd, message, wParam, lParam);
             }
@@ -157,24 +192,4 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         return DefWindowProc(hWnd, message, wParam, lParam);
     }
     return 0;
-}
-
-// “关于”框的消息处理程序。
-INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
-{
-    UNREFERENCED_PARAMETER(lParam);
-    switch (message)
-    {
-    case WM_INITDIALOG:
-        return (INT_PTR)TRUE;
-
-    case WM_COMMAND:
-        if (LOWORD(wParam) == IDOK || LOWORD(wParam) == IDCANCEL)
-        {
-            EndDialog(hDlg, LOWORD(wParam));
-            return (INT_PTR)TRUE;
-        }
-        break;
-    }
-    return (INT_PTR)FALSE;
 }
