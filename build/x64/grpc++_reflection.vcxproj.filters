@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\rpc\grpc\src\cpp\ext\proto_server_reflection.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\rpc\grpc\src\cpp\ext\proto_server_reflection_plugin.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\rpc\build\x64\gens\src\proto\grpc\reflection\v1alpha\reflection.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\rpc\build\x64\gens\src\proto\grpc\reflection\v1alpha\reflection.grpc.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\rpc\build\x64\gens\src\proto\grpc\reflection\v1alpha\reflection.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\rpc\build\x64\gens\src\proto\grpc\reflection\v1alpha\reflection.grpc.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\rpc\build\x64\CMakeFiles\bce886d8e7dde7bfbacd5582c1947466\reflection.grpc.pb.cc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\rpc\grpc\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8A2527D2-0055-34F3-9376-856CC3BDA91C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E844E9B4-0622-3F68-8D8B-77B42DAE3417}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{986AFAA2-2115-3B62-9B32-4319D5CC49A3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C9C14818-0EA3-373F-BFCF-301A6E57DD37}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>grpc++_error_details</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\rpc\build\x86\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">grpc++_error_details.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">grpc++_error_details</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\rpc\build\x86\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">grpc++_error_details.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">grpc++_error_details</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\rpc\build\x86\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">grpc++_error_details.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">grpc++_error_details</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\rpc\build\x86\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">grpc++_error_details.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">grpc++_error_details</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;D:\rpc\grpc\include;D:\rpc\grpc;D:\rpc\grpc\third_party\boringssl\include;D:\rpc\grpc\third_party\protobuf;D:\rpc\build\x86\third_party\zlib;D:\rpc\grpc\third_party\benchmark\include;D:\rpc\grpc\third_party\cares\cares;D:\rpc\build\x86\third_party\cares\cares;D:\rpc\build\x86\third_party\gflags\include;D:\rpc\grpc\third_party\address_sorting\include;D:\rpc\grpc\third_party\nanopb;D:\rpc\build\x86\gens;D:\rpc\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>D:\rpc\build\x86\Debug\grpc++_error_details.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;D:\rpc\grpc\include;D:\rpc\grpc;D:\rpc\grpc\third_party\boringssl\include;D:\rpc\grpc\third_party\protobuf;D:\rpc\build\x86\third_party\zlib;D:\rpc\grpc\third_party\benchmark\include;D:\rpc\grpc\third_party\cares\cares;D:\rpc\build\x86\third_party\cares\cares;D:\rpc\build\x86\third_party\gflags\include;D:\rpc\grpc\third_party\address_sorting\include;D:\rpc\grpc\third_party\nanopb;D:\rpc\build\x86\gens;D:\rpc\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;D:\rpc\grpc\include;D:\rpc\grpc;D:\rpc\grpc\third_party\boringssl\include;D:\rpc\grpc\third_party\protobuf;D:\rpc\build\x86\third_party\zlib;D:\rpc\grpc\third_party\benchmark\include;D:\rpc\grpc\third_party\cares\cares;D:\rpc\build\x86\third_party\cares\cares;D:\rpc\build\x86\third_party\gflags\include;D:\rpc\grpc\third_party\address_sorting\include;D:\rpc\grpc\third_party\nanopb;D:\rpc\build\x86\gens;D:\rpc\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;D:\rpc\grpc\include;D:\rpc\grpc;D:\rpc\grpc\third_party\boringssl\include;D:\rpc\grpc\third_party\protobuf;D:\rpc\build\x86\third_party\zlib;D:\rpc\grpc\third_party\benchmark\include;D:\rpc\grpc\third_party\cares\cares;D:\rpc\build\x86\third_party\cares\cares;D:\rpc\build\x86\third_party\gflags\include;D:\rpc\grpc\third_party\address_sorting\include;D:\rpc\grpc\third_party\nanopb;D:\rpc\build\x86\gens;D:\rpc\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>D:\rpc\build\x86\Release\grpc++_error_details.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;D:\rpc\grpc\include;D:\rpc\grpc;D:\rpc\grpc\third_party\boringssl\include;D:\rpc\grpc\third_party\protobuf;D:\rpc\build\x86\third_party\zlib;D:\rpc\grpc\third_party\benchmark\include;D:\rpc\grpc\third_party\cares\cares;D:\rpc\build\x86\third_party\cares\cares;D:\rpc\build\x86\third_party\gflags\include;D:\rpc\grpc\third_party\address_sorting\include;D:\rpc\grpc\third_party\nanopb;D:\rpc\build\x86\gens;D:\rpc\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;D:\rpc\grpc\include;D:\rpc\grpc;D:\rpc\grpc\third_party\boringssl\include;D:\rpc\grpc\third_party\protobuf;D:\rpc\build\x86\third_party\zlib;D:\rpc\grpc\third_party\benchmark\include;D:\rpc\grpc\third_party\cares\cares;D:\rpc\build\x86\third_party\cares\cares;D:\rpc\build\x86\third_party\gflags\include;D:\rpc\grpc\third_party\address_sorting\include;D:\rpc\grpc\third_party\nanopb;D:\rpc\build\x86\gens;D:\rpc\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;D:\rpc\grpc\include;D:\rpc\grpc;D:\rpc\grpc\third_party\boringssl\include;D:\rpc\grpc\third_party\protobuf;D:\rpc\build\x86\third_party\zlib;D:\rpc\grpc\third_party\benchmark\include;D:\rpc\grpc\third_party\cares\cares;D:\rpc\build\x86\third_party\cares\cares;D:\rpc\build\x86\third_party\gflags\include;D:\rpc\grpc\third_party\address_sorting\include;D:\rpc\grpc\third_party\nanopb;D:\rpc\build\x86\gens;D:\rpc\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>D:\rpc\build\x86\MinSizeRel\grpc++_error_details.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;D:\rpc\grpc\include;D:\rpc\grpc;D:\rpc\grpc\third_party\boringssl\include;D:\rpc\grpc\third_party\protobuf;D:\rpc\build\x86\third_party\zlib;D:\rpc\grpc\third_party\benchmark\include;D:\rpc\grpc\third_party\cares\cares;D:\rpc\build\x86\third_party\cares\cares;D:\rpc\build\x86\third_party\gflags\include;D:\rpc\grpc\third_party\address_sorting\include;D:\rpc\grpc\third_party\nanopb;D:\rpc\build\x86\gens;D:\rpc\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;D:\rpc\grpc\include;D:\rpc\grpc;D:\rpc\grpc\third_party\boringssl\include;D:\rpc\grpc\third_party\protobuf;D:\rpc\build\x86\third_party\zlib;D:\rpc\grpc\third_party\benchmark\include;D:\rpc\grpc\third_party\cares\cares;D:\rpc\build\x86\third_party\cares\cares;D:\rpc\build\x86\third_party\gflags\include;D:\rpc\grpc\third_party\address_sorting\include;D:\rpc\grpc\third_party\nanopb;D:\rpc\build\x86\gens;D:\rpc\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;D:\rpc\grpc\include;D:\rpc\grpc;D:\rpc\grpc\third_party\boringssl\include;D:\rpc\grpc\third_party\protobuf;D:\rpc\build\x86\third_party\zlib;D:\rpc\grpc\third_party\benchmark\include;D:\rpc\grpc\third_party\cares\cares;D:\rpc\build\x86\third_party\cares\cares;D:\rpc\build\x86\third_party\gflags\include;D:\rpc\grpc\third_party\address_sorting\include;D:\rpc\grpc\third_party\nanopb;D:\rpc\build\x86\gens;D:\rpc\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4506;4200;4291;4244;4267;4987;4774;4819;4996;4619</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>D:\rpc\build\x86\RelWithDebInfo\grpc++_error_details.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;PB_FIELD_32BIT;_WIN32_WINNT=0x600;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CARES_STATICLIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;D:\rpc\grpc\include;D:\rpc\grpc;D:\rpc\grpc\third_party\boringssl\include;D:\rpc\grpc\third_party\protobuf;D:\rpc\build\x86\third_party\zlib;D:\rpc\grpc\third_party\benchmark\include;D:\rpc\grpc\third_party\cares\cares;D:\rpc\build\x86\third_party\cares\cares;D:\rpc\build\x86\third_party\gflags\include;D:\rpc\grpc\third_party\address_sorting\include;D:\rpc\grpc\third_party\nanopb;D:\rpc\build\x86\gens;D:\rpc\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;D:\rpc\grpc\include;D:\rpc\grpc;D:\rpc\grpc\third_party\boringssl\include;D:\rpc\grpc\third_party\protobuf;D:\rpc\build\x86\third_party\zlib;D:\rpc\grpc\third_party\benchmark\include;D:\rpc\grpc\third_party\cares\cares;D:\rpc\build\x86\third_party\cares\cares;D:\rpc\build\x86\third_party\gflags\include;D:\rpc\grpc\third_party\address_sorting\include;D:\rpc\grpc\third_party\nanopb;D:\rpc\build\x86\gens;D:\rpc\grpc\third_party\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\rpc\build\x86\CMakeFiles\76879545ebacf074767dd69d85df07da\status.grpc.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Running gRPC C++ protocol buffer compiler on src/proto/grpc/status/status.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\rpc\grpc
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\rpc\build\x86\third_party\protobuf\Debug\protoc.exe --grpc_out=generate_mock_code=true:D:/rpc/build/x86/gens --cpp_out=D:/rpc/build/x86/gens --plugin=protoc-gen-grpc=D:/rpc/build/x86/Debug/grpc_cpp_plugin.exe -I . -I D:/rpc/grpc/third_party/protobuf/src src/proto/grpc/status/status.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/rpc/build/x86/CMakeFiles/76879545ebacf074767dd69d85df07da/status.grpc.pb.cc.rule;D:\rpc\grpc\src\proto\grpc\status\status.proto;D:\rpc\build\x86\third_party\protobuf\Debug\protoc.exe;D:\rpc\build\x86\Debug\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\rpc\build\x86\gens\src\proto\grpc\status\status.grpc.pb.cc;D:\rpc\build\x86\gens\src\proto\grpc\status\status.grpc.pb.h;D:\rpc\build\x86\gens\src\proto\grpc\status\status_mock.grpc.pb.h;D:\rpc\build\x86\gens\src\proto\grpc\status\status.pb.cc;D:\rpc\build\x86\gens\src\proto\grpc\status\status.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Running gRPC C++ protocol buffer compiler on src/proto/grpc/status/status.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\rpc\grpc
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\rpc\build\x86\third_party\protobuf\Release\protoc.exe --grpc_out=generate_mock_code=true:D:/rpc/build/x86/gens --cpp_out=D:/rpc/build/x86/gens --plugin=protoc-gen-grpc=D:/rpc/build/x86/Release/grpc_cpp_plugin.exe -I . -I D:/rpc/grpc/third_party/protobuf/src src/proto/grpc/status/status.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/rpc/build/x86/CMakeFiles/76879545ebacf074767dd69d85df07da/status.grpc.pb.cc.rule;D:\rpc\grpc\src\proto\grpc\status\status.proto;D:\rpc\build\x86\third_party\protobuf\Release\protoc.exe;D:\rpc\build\x86\Release\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\rpc\build\x86\gens\src\proto\grpc\status\status.grpc.pb.cc;D:\rpc\build\x86\gens\src\proto\grpc\status\status.grpc.pb.h;D:\rpc\build\x86\gens\src\proto\grpc\status\status_mock.grpc.pb.h;D:\rpc\build\x86\gens\src\proto\grpc\status\status.pb.cc;D:\rpc\build\x86\gens\src\proto\grpc\status\status.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Running gRPC C++ protocol buffer compiler on src/proto/grpc/status/status.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+cd D:\rpc\grpc
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\rpc\build\x86\third_party\protobuf\MinSizeRel\protoc.exe --grpc_out=generate_mock_code=true:D:/rpc/build/x86/gens --cpp_out=D:/rpc/build/x86/gens --plugin=protoc-gen-grpc=D:/rpc/build/x86/MinSizeRel/grpc_cpp_plugin.exe -I . -I D:/rpc/grpc/third_party/protobuf/src src/proto/grpc/status/status.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/rpc/build/x86/CMakeFiles/76879545ebacf074767dd69d85df07da/status.grpc.pb.cc.rule;D:\rpc\grpc\src\proto\grpc\status\status.proto;D:\rpc\build\x86\third_party\protobuf\MinSizeRel\protoc.exe;D:\rpc\build\x86\MinSizeRel\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\rpc\build\x86\gens\src\proto\grpc\status\status.grpc.pb.cc;D:\rpc\build\x86\gens\src\proto\grpc\status\status.grpc.pb.h;D:\rpc\build\x86\gens\src\proto\grpc\status\status_mock.grpc.pb.h;D:\rpc\build\x86\gens\src\proto\grpc\status\status.pb.cc;D:\rpc\build\x86\gens\src\proto\grpc\status\status.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Running gRPC C++ protocol buffer compiler on src/proto/grpc/status/status.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+cd D:\rpc\grpc
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\rpc\build\x86\third_party\protobuf\RelWithDebInfo\protoc.exe --grpc_out=generate_mock_code=true:D:/rpc/build/x86/gens --cpp_out=D:/rpc/build/x86/gens --plugin=protoc-gen-grpc=D:/rpc/build/x86/RelWithDebInfo/grpc_cpp_plugin.exe -I . -I D:/rpc/grpc/third_party/protobuf/src src/proto/grpc/status/status.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/rpc/build/x86/CMakeFiles/76879545ebacf074767dd69d85df07da/status.grpc.pb.cc.rule;D:\rpc\grpc\src\proto\grpc\status\status.proto;D:\rpc\build\x86\third_party\protobuf\RelWithDebInfo\protoc.exe;D:\rpc\build\x86\RelWithDebInfo\grpc_cpp_plugin.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\rpc\build\x86\gens\src\proto\grpc\status\status.grpc.pb.cc;D:\rpc\build\x86\gens\src\proto\grpc\status\status.grpc.pb.h;D:\rpc\build\x86\gens\src\proto\grpc\status\status_mock.grpc.pb.h;D:\rpc\build\x86\gens\src\proto\grpc\status\status.pb.cc;D:\rpc\build\x86\gens\src\proto\grpc\status\status.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\rpc\grpc\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/rpc/grpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/rpc/grpc -BD:/rpc/build/x86 --check-stamp-file D:/rpc/build/x86/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/rpc/grpc/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeCCompiler.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeCXXCompiler.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeRCCompiler.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeSystem.cmake;D:\rpc\grpc\CMakeLists.txt;D:\rpc\grpc\cmake\address_sorting.cmake;D:\rpc\grpc\cmake\benchmark.cmake;D:\rpc\grpc\cmake\cares.cmake;D:\rpc\grpc\cmake\gRPCConfig.cmake.in;D:\rpc\grpc\cmake\gRPCConfigVersion.cmake.in;D:\rpc\grpc\cmake\gflags.cmake;D:\rpc\grpc\cmake\msvc_static_runtime.cmake;D:\rpc\grpc\cmake\nanopb.cmake;D:\rpc\grpc\cmake\protobuf.cmake;D:\rpc\grpc\cmake\ssl.cmake;D:\rpc\grpc\cmake\zlib.cmake;D:\rpc\grpc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\rpc\build\x86\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/rpc/grpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/rpc/grpc -BD:/rpc/build/x86 --check-stamp-file D:/rpc/build/x86/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/rpc/grpc/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeCCompiler.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeCXXCompiler.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeRCCompiler.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeSystem.cmake;D:\rpc\grpc\CMakeLists.txt;D:\rpc\grpc\cmake\address_sorting.cmake;D:\rpc\grpc\cmake\benchmark.cmake;D:\rpc\grpc\cmake\cares.cmake;D:\rpc\grpc\cmake\gRPCConfig.cmake.in;D:\rpc\grpc\cmake\gRPCConfigVersion.cmake.in;D:\rpc\grpc\cmake\gflags.cmake;D:\rpc\grpc\cmake\msvc_static_runtime.cmake;D:\rpc\grpc\cmake\nanopb.cmake;D:\rpc\grpc\cmake\protobuf.cmake;D:\rpc\grpc\cmake\ssl.cmake;D:\rpc\grpc\cmake\zlib.cmake;D:\rpc\grpc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\rpc\build\x86\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/rpc/grpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/rpc/grpc -BD:/rpc/build/x86 --check-stamp-file D:/rpc/build/x86/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/rpc/grpc/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeCCompiler.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeCXXCompiler.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeRCCompiler.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeSystem.cmake;D:\rpc\grpc\CMakeLists.txt;D:\rpc\grpc\cmake\address_sorting.cmake;D:\rpc\grpc\cmake\benchmark.cmake;D:\rpc\grpc\cmake\cares.cmake;D:\rpc\grpc\cmake\gRPCConfig.cmake.in;D:\rpc\grpc\cmake\gRPCConfigVersion.cmake.in;D:\rpc\grpc\cmake\gflags.cmake;D:\rpc\grpc\cmake\msvc_static_runtime.cmake;D:\rpc\grpc\cmake\nanopb.cmake;D:\rpc\grpc\cmake\protobuf.cmake;D:\rpc\grpc\cmake\ssl.cmake;D:\rpc\grpc\cmake\zlib.cmake;D:\rpc\grpc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\rpc\build\x86\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/rpc/grpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/rpc/grpc -BD:/rpc/build/x86 --check-stamp-file D:/rpc/build/x86/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/rpc/grpc/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeCCompiler.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeCXXCompiler.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeRCCompiler.cmake;D:\rpc\build\x86\CMakeFiles\3.14.2\CMakeSystem.cmake;D:\rpc\grpc\CMakeLists.txt;D:\rpc\grpc\cmake\address_sorting.cmake;D:\rpc\grpc\cmake\benchmark.cmake;D:\rpc\grpc\cmake\cares.cmake;D:\rpc\grpc\cmake\gRPCConfig.cmake.in;D:\rpc\grpc\cmake\gRPCConfigVersion.cmake.in;D:\rpc\grpc\cmake\gflags.cmake;D:\rpc\grpc\cmake\msvc_static_runtime.cmake;D:\rpc\grpc\cmake\nanopb.cmake;D:\rpc\grpc\cmake\protobuf.cmake;D:\rpc\grpc\cmake\ssl.cmake;D:\rpc\grpc\cmake\zlib.cmake;D:\rpc\grpc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\rpc\build\x86\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\rpc\build\x86\gens\src\proto\grpc\status\status.pb.cc" />
+    <ClCompile Include="D:\rpc\build\x86\gens\src\proto\grpc\status\status.grpc.pb.cc" />
+    <ClInclude Include="D:\rpc\build\x86\gens\src\proto\grpc\status\status.pb.h" />
+    <ClInclude Include="D:\rpc\build\x86\gens\src\proto\grpc\status\status.grpc.pb.h" />
+    <ClCompile Include="D:\rpc\grpc\src\cpp\util\error_details.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\rpc\build\x86\ZERO_CHECK.vcxproj">
+      <Project>{6009B045-0F3D-38EB-BBB8-96263B0579F1}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x86\address_sorting.vcxproj">
+      <Project>{A7B58F08-A304-353F-B195-0056FC45B688}</Project>
+      <Name>address_sorting</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x86\third_party\cares\cares\c-ares.vcxproj">
+      <Project>{2BF1FB7F-B98E-3806-B53F-FA73B04B8340}</Project>
+      <Name>c-ares</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x86\third_party\boringssl\crypto\crypto.vcxproj">
+      <Project>{CD552283-54B5-36DE-ADBD-EE4FBBB8CFE1}</Project>
+      <Name>crypto</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x86\gpr.vcxproj">
+      <Project>{01A11F5A-B3F9-3CA8-AEAA-3463B9044218}</Project>
+      <Name>gpr</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x86\grpc.vcxproj">
+      <Project>{7A2D33F6-7183-3BC7-AE62-192AE409E4F8}</Project>
+      <Name>grpc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x86\grpc++.vcxproj">
+      <Project>{8C328303-33DD-30D9-AA90-04236CADF0B4}</Project>
+      <Name>grpc++</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x86\grpc_cpp_plugin.vcxproj">
+      <Project>{3DF6CD2B-1B40-3238-9E20-823280BC03FB}</Project>
+      <Name>grpc_cpp_plugin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x86\third_party\protobuf\libprotobuf.vcxproj">
+      <Project>{5790F732-2037-368F-A4D8-4F1C260EA24E}</Project>
+      <Name>libprotobuf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x86\third_party\protobuf\protoc.vcxproj">
+      <Project>{4A0F10C3-E28F-3578-82C0-D2F979A40E6D}</Project>
+      <Name>protoc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x86\third_party\boringssl\ssl\ssl.vcxproj">
+      <Project>{FAC93C29-3A89-35E3-A8E5-A7700A3F9E6C}</Project>
+      <Name>ssl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x86\third_party\zlib\zlibstatic.vcxproj">
+      <Project>{79CE1F10-99E1-345D-AD27-3F9CFD1A8069}</Project>
+      <Name>zlibstatic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

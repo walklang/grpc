@@ -1,0 +1,917 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1CEC2E24-8570-3715-A346-84916E1193A7}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\rpc\grpc\third_party\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\rpc\grpc\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/rpc/grpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/rpc/grpc -BD:/rpc/build/x64 --check-stamp-file D:/rpc/build/x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/rpc/grpc/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeCCompiler.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeCXXCompiler.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeRCCompiler.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeSystem.cmake;D:\rpc\grpc\CMakeLists.txt;D:\rpc\grpc\cmake\address_sorting.cmake;D:\rpc\grpc\cmake\benchmark.cmake;D:\rpc\grpc\cmake\cares.cmake;D:\rpc\grpc\cmake\gRPCConfig.cmake.in;D:\rpc\grpc\cmake\gRPCConfigVersion.cmake.in;D:\rpc\grpc\cmake\gflags.cmake;D:\rpc\grpc\cmake\msvc_static_runtime.cmake;D:\rpc\grpc\cmake\nanopb.cmake;D:\rpc\grpc\cmake\protobuf.cmake;D:\rpc\grpc\cmake\ssl.cmake;D:\rpc\grpc\cmake\zlib.cmake;D:\rpc\grpc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\rpc\build\x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/rpc/grpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/rpc/grpc -BD:/rpc/build/x64 --check-stamp-file D:/rpc/build/x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/rpc/grpc/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeCCompiler.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeCXXCompiler.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeRCCompiler.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeSystem.cmake;D:\rpc\grpc\CMakeLists.txt;D:\rpc\grpc\cmake\address_sorting.cmake;D:\rpc\grpc\cmake\benchmark.cmake;D:\rpc\grpc\cmake\cares.cmake;D:\rpc\grpc\cmake\gRPCConfig.cmake.in;D:\rpc\grpc\cmake\gRPCConfigVersion.cmake.in;D:\rpc\grpc\cmake\gflags.cmake;D:\rpc\grpc\cmake\msvc_static_runtime.cmake;D:\rpc\grpc\cmake\nanopb.cmake;D:\rpc\grpc\cmake\protobuf.cmake;D:\rpc\grpc\cmake\ssl.cmake;D:\rpc\grpc\cmake\zlib.cmake;D:\rpc\grpc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\rpc\build\x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/rpc/grpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/rpc/grpc -BD:/rpc/build/x64 --check-stamp-file D:/rpc/build/x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/rpc/grpc/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeCCompiler.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeCXXCompiler.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeRCCompiler.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeSystem.cmake;D:\rpc\grpc\CMakeLists.txt;D:\rpc\grpc\cmake\address_sorting.cmake;D:\rpc\grpc\cmake\benchmark.cmake;D:\rpc\grpc\cmake\cares.cmake;D:\rpc\grpc\cmake\gRPCConfig.cmake.in;D:\rpc\grpc\cmake\gRPCConfigVersion.cmake.in;D:\rpc\grpc\cmake\gflags.cmake;D:\rpc\grpc\cmake\msvc_static_runtime.cmake;D:\rpc\grpc\cmake\nanopb.cmake;D:\rpc\grpc\cmake\protobuf.cmake;D:\rpc\grpc\cmake\ssl.cmake;D:\rpc\grpc\cmake\zlib.cmake;D:\rpc\grpc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\rpc\build\x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/rpc/grpc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/rpc/grpc -BD:/rpc/build/x64 --check-stamp-file D:/rpc/build/x64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/rpc/grpc/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeCCompiler.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeCXXCompiler.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeRCCompiler.cmake;D:\rpc\build\x64\CMakeFiles\3.14.2\CMakeSystem.cmake;D:\rpc\grpc\CMakeLists.txt;D:\rpc\grpc\cmake\address_sorting.cmake;D:\rpc\grpc\cmake\benchmark.cmake;D:\rpc\grpc\cmake\cares.cmake;D:\rpc\grpc\cmake\gRPCConfig.cmake.in;D:\rpc\grpc\cmake\gRPCConfigVersion.cmake.in;D:\rpc\grpc\cmake\gflags.cmake;D:\rpc\grpc\cmake\msvc_static_runtime.cmake;D:\rpc\grpc\cmake\nanopb.cmake;D:\rpc\grpc\cmake\protobuf.cmake;D:\rpc\grpc\cmake\ssl.cmake;D:\rpc\grpc\cmake\zlib.cmake;D:\rpc\grpc\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\rpc\build\x64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\rpc\build\x64\ZERO_CHECK.vcxproj">
+      <Project>{4C60D6D7-07BB-3806-A10E-E865E6928399}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\cares\cares\acountry.vcxproj">
+      <Project>{6EDD61D1-4BFA-3303-90FE-772E2FE48A25}</Project>
+      <Name>acountry</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\address_sorting.vcxproj">
+      <Project>{9A63786F-5123-3BCC-A8FF-7FFCA4AFB422}</Project>
+      <Name>address_sorting</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\cares\cares\adig.vcxproj">
+      <Project>{57D254B5-3C44-314F-A70A-0D417CA181EA}</Project>
+      <Name>adig</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\cares\cares\ahost.vcxproj">
+      <Project>{0DD31350-5D15-3F1C-812B-41F9FFBEC84C}</Project>
+      <Name>ahost</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\asn1\asn1.vcxproj">
+      <Project>{5E29B219-C512-3D28-9F01-CD66F3627F22}</Project>
+      <Name>asn1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\base64\base64.vcxproj">
+      <Project>{CCDAED9C-DFEA-32EA-82E1-BD81D2FD8D87}</Project>
+      <Name>base64</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\basic_test.vcxproj">
+      <Project>{93458756-EA13-361F-AC36-51BAA1D3B077}</Project>
+      <Name>basic_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\src\benchmark.vcxproj">
+      <Project>{39E9CACE-2333-3283-BFAB-ED97AB6004BF}</Project>
+      <Name>benchmark</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\src\benchmark_main.vcxproj">
+      <Project>{ABB9A9AB-7878-38C6-8248-F4F6647AE56A}</Project>
+      <Name>benchmark_main</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\benchmark_test.vcxproj">
+      <Project>{D1E4D54F-7041-31F4-BA20-48EE6695A4E5}</Project>
+      <Name>benchmark_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\bio\bio.vcxproj">
+      <Project>{95382049-FD64-3C1D-B703-1A43C9C16E5C}</Project>
+      <Name>bio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\bio\bio_decrepit.vcxproj">
+      <Project>{1327416C-329D-363F-99CB-0D04809B84E9}</Project>
+      <Name>bio_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\blowfish\blowfish.vcxproj">
+      <Project>{C6C627C8-8B67-3763-BDFF-54DC5DEEA433}</Project>
+      <Name>blowfish</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\bn_extra\bn_extra.vcxproj">
+      <Project>{B145D8D4-2EEB-3BDF-AF0F-88A489768E7C}</Project>
+      <Name>bn_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\boringssl_gtest.vcxproj">
+      <Project>{2DC9429F-A27D-3ADA-A200-5115097C63D4}</Project>
+      <Name>boringssl_gtest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\test\boringssl_gtest_main.vcxproj">
+      <Project>{EC4A6BBA-842C-3E5B-A7CC-0D0A1D675899}</Project>
+      <Name>boringssl_gtest_main</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\tool\bssl.vcxproj">
+      <Project>{B677ECA1-41A9-32EF-99EC-095D8AA75BBB}</Project>
+      <Name>bssl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\ssl\test\bssl_shim.vcxproj">
+      <Project>{1386B710-4A8C-3BFE-8BAF-BF6781709993}</Project>
+      <Name>bssl_shim</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\buf\buf.vcxproj">
+      <Project>{2D40CFD6-B843-3AC5-ACE7-CF0997648C87}</Project>
+      <Name>buf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\bytestring\bytestring.vcxproj">
+      <Project>{FB66DC78-8B3F-3A13-86D4-AAAC37E2D0BB}</Project>
+      <Name>bytestring</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\cares\cares\c-ares.vcxproj">
+      <Project>{6DC511B2-9A92-3D01-AE02-BD7C0C12E435}</Project>
+      <Name>c-ares</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\cast\cast.vcxproj">
+      <Project>{930E8D55-9D2D-3D47-9EC4-B50071C171AE}</Project>
+      <Name>cast</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\cfb\cfb.vcxproj">
+      <Project>{0EFD943E-D6EA-37CD-810A-8B0CA89B2267}</Project>
+      <Name>cfb</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\chacha\chacha.vcxproj">
+      <Project>{9D63B31D-9B5C-3518-B7BF-D30C81C0ED01}</Project>
+      <Name>chacha</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\check_epollexclusive.vcxproj">
+      <Project>{C113F92E-CC6C-3A98-A71A-37973429AF98}</Project>
+      <Name>check_epollexclusive</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\cipher_extra\cipher_extra.vcxproj">
+      <Project>{666E96A9-C4ED-31E0-91B5-0927C4C00ABD}</Project>
+      <Name>cipher_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\cmac\cmac.vcxproj">
+      <Project>{3086C7D0-0A30-35F2-BEB5-FC222B8E7D3F}</Project>
+      <Name>cmac</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\complexity_test.vcxproj">
+      <Project>{D6820B55-B774-3AB3-A856-A30EED29D780}</Project>
+      <Name>complexity_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\conf\conf.vcxproj">
+      <Project>{47AC55A4-D994-3D22-8B68-5485AB6BF8ED}</Project>
+      <Name>conf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\crypto.vcxproj">
+      <Project>{B45B724F-8955-3271-A4BB-05D345196106}</Project>
+      <Name>crypto</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\crypto_base.vcxproj">
+      <Project>{313201FE-88BA-3906-B72B-D4EA71A160DE}</Project>
+      <Name>crypto_base</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\crypto_test.vcxproj">
+      <Project>{D0AD236E-6441-3BE3-A9B4-F60EB9B1C644}</Project>
+      <Name>crypto_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto_test_data.vcxproj">
+      <Project>{1DB8CC39-0A64-394A-A0ED-A4528F758E2F}</Project>
+      <Name>crypto_test_data</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\curve25519\curve25519.vcxproj">
+      <Project>{CD5114FE-7C5C-394D-B743-773DDD347DD0}</Project>
+      <Name>curve25519</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\decrepit.vcxproj">
+      <Project>{1E242E0F-0E00-3E66-AE69-746BF75D024F}</Project>
+      <Name>decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\decrepit_test.vcxproj">
+      <Project>{37677CE7-9E85-3849-A070-B9920832B3E5}</Project>
+      <Name>decrepit_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\des\des_decrepit.vcxproj">
+      <Project>{9D20AC9D-196C-3C23-916C-393EFBDCD587}</Project>
+      <Name>des_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\dh\dh.vcxproj">
+      <Project>{51AF7F25-6E01-34F8-B70F-D976031D6744}</Project>
+      <Name>dh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\dh\dh_decrepit.vcxproj">
+      <Project>{3137CA9C-2A14-3A28-BD2D-BD5B5E37DC41}</Project>
+      <Name>dh_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\diagnostics_test.vcxproj">
+      <Project>{8FF8FFDA-E032-35C7-B678-5D914FCAA413}</Project>
+      <Name>diagnostics_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\digest_extra\digest_extra.vcxproj">
+      <Project>{7D1AC9D6-39BC-3374-8080-9DA0C836D570}</Project>
+      <Name>digest_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\donotoptimize_test.vcxproj">
+      <Project>{DF945C90-FEF4-307C-B7FB-FA8A0F0E9255}</Project>
+      <Name>donotoptimize_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\dsa\dsa.vcxproj">
+      <Project>{3D8465FC-635A-3D75-ADB6-37C530E9CC1C}</Project>
+      <Name>dsa</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\dsa\dsa_decrepit.vcxproj">
+      <Project>{1ED837A4-1DE2-319A-9385-A35C7BBBDA88}</Project>
+      <Name>dsa_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\ec_extra\ec_extra.vcxproj">
+      <Project>{CCC6C806-2CD1-3B8A-B1A9-42A2C22445AC}</Project>
+      <Name>ec_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\ecdh\ecdh.vcxproj">
+      <Project>{CE678400-7113-39C6-BB64-25B12051F6D9}</Project>
+      <Name>ecdh</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\ecdsa_extra\ecdsa_extra.vcxproj">
+      <Project>{8E976555-36FE-3939-995C-7F9A7BB41535}</Project>
+      <Name>ecdsa_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\engine\engine.vcxproj">
+      <Project>{3A0E47D0-D5F6-3065-B059-1A56565F769A}</Project>
+      <Name>engine</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\err\err.vcxproj">
+      <Project>{97C50680-610E-3344-80BE-43D850DE71DA}</Project>
+      <Name>err</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\evp\evp.vcxproj">
+      <Project>{8A533C2B-2ECC-3010-A609-5645DD8FB666}</Project>
+      <Name>evp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\evp\evp_decrepit.vcxproj">
+      <Project>{B2A38FC0-4BBF-3EDE-B35A-1DD390FECAD2}</Project>
+      <Name>evp_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\zlib\example.vcxproj">
+      <Project>{1CCB2697-F697-3791-AF4B-6122B9D4260B}</Project>
+      <Name>example</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\third_party\fiat\fiat.vcxproj">
+      <Project>{0EB7866A-7080-306E-9C4E-7B93420611B2}</Project>
+      <Name>fiat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\filter_test.vcxproj">
+      <Project>{19BBC72A-64F2-3C42-A0A1-96018F3FC66D}</Project>
+      <Name>filter_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\fipsmodule\fipsmodule.vcxproj">
+      <Project>{63604124-0C30-3786-9449-ECF332055146}</Project>
+      <Name>fipsmodule</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\fixture_test.vcxproj">
+      <Project>{AFB1C260-9634-3AE4-9011-E94E2DD6C696}</Project>
+      <Name>fixture_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\gen_hpack_tables.vcxproj">
+      <Project>{BF1FB7E6-988C-3B9E-BB6C-446CC66A1CB8}</Project>
+      <Name>gen_hpack_tables</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\gen_legal_metadata_characters.vcxproj">
+      <Project>{73A88C65-1542-30B5-8B2D-A6FC4D2B9835}</Project>
+      <Name>gen_legal_metadata_characters</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\gen_percent_encoding_tables.vcxproj">
+      <Project>{4A0625FB-BACD-34E0-95A0-4474390661A2}</Project>
+      <Name>gen_percent_encoding_tables</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\gflags\gflags_nothreads_static.vcxproj">
+      <Project>{4636B1BF-2626-3C2D-BB0E-0BD18F6CC781}</Project>
+      <Name>gflags_nothreads_static</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\gpr.vcxproj">
+      <Project>{F7B93987-FC94-3F64-84B9-C109D578C585}</Project>
+      <Name>gpr</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc.vcxproj">
+      <Project>{A7334FEB-77D3-3EEE-A188-16F91E824295}</Project>
+      <Name>grpc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc++.vcxproj">
+      <Project>{5AEE30DE-54D2-3D9D-9477-CDCE91C44C73}</Project>
+      <Name>grpc++</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc++_cronet.vcxproj">
+      <Project>{002D16F1-4A17-3937-B022-288CA73A8EA9}</Project>
+      <Name>grpc++_cronet</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc++_error_details.vcxproj">
+      <Project>{2CF4FC63-02A5-32CB-8867-C3DDB73BC541}</Project>
+      <Name>grpc++_error_details</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc++_reflection.vcxproj">
+      <Project>{4449F60F-EE53-3DD7-ADDE-CA2E31EAB701}</Project>
+      <Name>grpc++_reflection</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc++_unsecure.vcxproj">
+      <Project>{D1CDC412-C5BC-37EC-9528-F0DB4F8B8CCF}</Project>
+      <Name>grpc++_unsecure</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc_cpp_plugin.vcxproj">
+      <Project>{92F1A0D2-57EE-3FC5-8E68-88746E87991A}</Project>
+      <Name>grpc_cpp_plugin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc_create_jwt.vcxproj">
+      <Project>{BE189227-F424-307D-A04F-3BE600DF6CE8}</Project>
+      <Name>grpc_create_jwt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc_cronet.vcxproj">
+      <Project>{64C42D0F-1196-33E2-BFFB-59DCAA524EDC}</Project>
+      <Name>grpc_cronet</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc_csharp_ext.vcxproj">
+      <Project>{1397C299-3A86-3EAC-B1B6-163900D29DE7}</Project>
+      <Name>grpc_csharp_ext</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc_csharp_plugin.vcxproj">
+      <Project>{5C18D071-45BD-3068-B04E-840CE1289404}</Project>
+      <Name>grpc_csharp_plugin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc_node_plugin.vcxproj">
+      <Project>{57242446-EB53-3EEB-8F83-686EFB259804}</Project>
+      <Name>grpc_node_plugin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc_objective_c_plugin.vcxproj">
+      <Project>{1CCA413A-363B-3D56-A6F4-BEDF0932EAAA}</Project>
+      <Name>grpc_objective_c_plugin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc_php_plugin.vcxproj">
+      <Project>{2F97F225-70FA-3235-8EA7-A2265ADFD27E}</Project>
+      <Name>grpc_php_plugin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc_plugin_support.vcxproj">
+      <Project>{1777F6FB-0D7C-38AC-BEDF-0D96593C12A3}</Project>
+      <Name>grpc_plugin_support</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc_print_google_default_creds_token.vcxproj">
+      <Project>{180DFAA6-AC2C-387E-9F4B-EC54C47AF073}</Project>
+      <Name>grpc_print_google_default_creds_token</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc_python_plugin.vcxproj">
+      <Project>{CBE9261A-6A52-3676-9B66-8E805E4DBFFE}</Project>
+      <Name>grpc_python_plugin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc_ruby_plugin.vcxproj">
+      <Project>{7CEACABE-6896-35ED-A035-8BB3690357EC}</Project>
+      <Name>grpc_ruby_plugin</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc_unsecure.vcxproj">
+      <Project>{B846D3D0-4BF0-3B53-9949-F3AF8B92DDBC}</Project>
+      <Name>grpc_unsecure</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpc_verify_jwt.vcxproj">
+      <Project>{4BB669D4-B789-377C-8499-99631DBBC506}</Project>
+      <Name>grpc_verify_jwt</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\grpcpp_channelz.vcxproj">
+      <Project>{294C354B-81ED-3C84-B30D-23778FEBF287}</Project>
+      <Name>grpcpp_channelz</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\hkdf\hkdf.vcxproj">
+      <Project>{700E7919-09A9-3611-9838-DCDB3B3E19A5}</Project>
+      <Name>hkdf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\lhash\lhash.vcxproj">
+      <Project>{2F94E451-F607-372A-A0E4-327E085256D1}</Project>
+      <Name>lhash</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\protobuf\libprotobuf.vcxproj">
+      <Project>{4C701210-CA05-3D3F-9C18-CA686578A0D4}</Project>
+      <Name>libprotobuf</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\protobuf\libprotobuf-lite.vcxproj">
+      <Project>{731F9765-2B96-33BD-AC8B-28348AAB1E43}</Project>
+      <Name>libprotobuf-lite</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\protobuf\libprotoc.vcxproj">
+      <Project>{E82F572D-9433-316C-AC04-B390EBF3B310}</Project>
+      <Name>libprotoc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\link_main_test.vcxproj">
+      <Project>{B498B407-35D6-33D0-9E85-59734F0080EC}</Project>
+      <Name>link_main_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\map_test.vcxproj">
+      <Project>{175B6AA5-A409-3C1C-91FF-B3AFE5335F56}</Project>
+      <Name>map_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\zlib\minigzip.vcxproj">
+      <Project>{C63F0704-CF12-3043-AAE0-A3135C9800BD}</Project>
+      <Name>minigzip</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\multiple_ranges_test.vcxproj">
+      <Project>{8F951DCD-AF81-36B8-AF2C-AD6FA7A53A82}</Project>
+      <Name>multiple_ranges_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\obj\obj.vcxproj">
+      <Project>{1A112F94-6BDC-31CA-B8DB-E274BFF37DDC}</Project>
+      <Name>obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\obj\obj_decrepit.vcxproj">
+      <Project>{1BDF8B2D-6BC7-3F73-96CB-A1FD3694A97D}</Project>
+      <Name>obj_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\options_test.vcxproj">
+      <Project>{472605C4-B0CB-3C15-82CA-B84124FEC829}</Project>
+      <Name>options_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\output_test_helper.vcxproj">
+      <Project>{6F33BE1A-E0F2-3AC0-84C1-968AADFEBD46}</Project>
+      <Name>output_test_helper</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\pem\pem.vcxproj">
+      <Project>{1440554F-E230-3E25-B32C-16C759D4309E}</Project>
+      <Name>pem</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\pkcs7\pkcs7.vcxproj">
+      <Project>{AD5A1E06-56CE-331D-B347-793CDD477350}</Project>
+      <Name>pkcs7</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\pkcs8\pkcs8_lib.vcxproj">
+      <Project>{8E4D19EB-D118-3221-A1D8-7014CB3A7AAE}</Project>
+      <Name>pkcs8_lib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\poly1305\poly1305.vcxproj">
+      <Project>{E85ED13C-C9CC-3ACC-81E5-BB0D96318281}</Project>
+      <Name>poly1305</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\pool\pool.vcxproj">
+      <Project>{E82E4FC2-3198-3686-B576-BAF4A49D4762}</Project>
+      <Name>pool</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\protobuf\protoc.vcxproj">
+      <Project>{1BB42048-AC5E-3C0F-9FDF-B13B4B5CDC51}</Project>
+      <Name>protoc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\rand_extra\rand_extra.vcxproj">
+      <Project>{B48695B5-CB51-33E6-B171-76501D8FC04A}</Project>
+      <Name>rand_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\rc4\rc4.vcxproj">
+      <Project>{C12CAFF0-E400-3360-AF4E-D926F8DB9537}</Project>
+      <Name>rc4</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\rc4\rc4_decrepit.vcxproj">
+      <Project>{FA9C23B2-A8FB-3271-B6B5-82DD8AB57F57}</Project>
+      <Name>rc4_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\register_benchmark_test.vcxproj">
+      <Project>{B9E8508A-1D01-3548-B15D-07CF65655656}</Project>
+      <Name>register_benchmark_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\reporter_output_test.vcxproj">
+      <Project>{A0D6C54E-3C20-3A02-9971-C43E76F54C74}</Project>
+      <Name>reporter_output_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\ripemd\ripemd_decrepit.vcxproj">
+      <Project>{DF7FCCC7-0323-3A1A-812B-430A6D9DC271}</Project>
+      <Name>ripemd_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\rsa\rsa_decrepit.vcxproj">
+      <Project>{D46CE2C8-0CB9-3F3B-A942-5ECF487F5E5D}</Project>
+      <Name>rsa_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\rsa_extra\rsa_extra.vcxproj">
+      <Project>{66DC5D28-1B89-321B-AB0C-F982E46D0B21}</Project>
+      <Name>rsa_extra</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\skip_with_error_test.vcxproj">
+      <Project>{293469AD-98C2-3DAD-9C76-39CF3CA87E02}</Project>
+      <Name>skip_with_error_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\ssl\ssl.vcxproj">
+      <Project>{1602634E-618A-39FE-9FE3-49D682C32BC5}</Project>
+      <Name>ssl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\ssl\ssl_decrepit.vcxproj">
+      <Project>{6A9695FA-2198-31B2-A534-705AF0C2A6A9}</Project>
+      <Name>ssl_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\ssl\ssl_test.vcxproj">
+      <Project>{A2284B9D-8579-368E-8BAA-3875BEAFB503}</Project>
+      <Name>ssl_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\stack\stack.vcxproj">
+      <Project>{5936A2DB-218F-3081-A0B7-8E262420DDAD}</Project>
+      <Name>stack</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\templated_fixture_test.vcxproj">
+      <Project>{B262D4FA-349E-3EB6-9110-26DEB0D807A8}</Project>
+      <Name>templated_fixture_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\test\test_support.vcxproj">
+      <Project>{4354E93F-48DE-3D7F-849E-C16DE1F8732C}</Project>
+      <Name>test_support</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\user_counters_tabular_test.vcxproj">
+      <Project>{697982F4-849C-368D-A59F-FA3795FB519B}</Project>
+      <Name>user_counters_tabular_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\benchmark\test\user_counters_test.vcxproj">
+      <Project>{FD5E8080-CEF1-35C2-B7B7-CE40C0C55FEB}</Project>
+      <Name>user_counters_test</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\x509\x509.vcxproj">
+      <Project>{AFCF42F2-3EDF-3F53-98AC-32E5DC9B96B7}</Project>
+      <Name>x509</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\x509\x509_decrepit.vcxproj">
+      <Project>{E7043DD2-B3BC-3662-8C2A-196D430C03FB}</Project>
+      <Name>x509_decrepit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\crypto\x509v3\x509v3.vcxproj">
+      <Project>{FEBDF7AF-3EE2-3271-A329-B1005B89DA54}</Project>
+      <Name>x509v3</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\boringssl\decrepit\xts\xts.vcxproj">
+      <Project>{0E0C7F9D-0FC7-38F5-BFC5-CF8583B51CBA}</Project>
+      <Name>xts</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\zlib\zlib.vcxproj">
+      <Project>{8FD87DD6-3883-3861-AC9B-9114E885B3D0}</Project>
+      <Name>zlib</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\rpc\build\x64\third_party\zlib\zlibstatic.vcxproj">
+      <Project>{1D8CE302-13BC-30BE-9DB9-8B0D1E1CE343}</Project>
+      <Name>zlibstatic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
