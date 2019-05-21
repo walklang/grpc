@@ -3,14 +3,11 @@ C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeDependentOption.cmake
 C:/Program Files/CMake/share/cmake-3.14/Modules/CheckIncludeFile.cmake
 C:/Program Files/CMake/share/cmake-3.14/Modules/CheckLibraryExists.cmake
 C:/Program Files/CMake/share/cmake-3.14/Modules/CheckSymbolExists.cmake
-C:/Program Files/CMake/share/cmake-3.14/Modules/ExternalProject.cmake
 C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageHandleStandardArgs.cmake
 C:/Program Files/CMake/share/cmake-3.14/Modules/FindPackageMessage.cmake
 C:/Program Files/CMake/share/cmake-3.14/Modules/FindThreads.cmake
 C:/Program Files/CMake/share/cmake-3.14/Modules/GNUInstallDirs.cmake
-D:/rpc/build/x86/third_party/protobuf/examples/tmp/examples-cfgcmd.txt.in
 D:/rpc/grpc/third_party/protobuf/cmake/CMakeLists.txt
-D:/rpc/grpc/third_party/protobuf/cmake/examples.cmake
 D:/rpc/grpc/third_party/protobuf/cmake/extract_includes.bat.in
 D:/rpc/grpc/third_party/protobuf/cmake/install.cmake
 D:/rpc/grpc/third_party/protobuf/cmake/libprotobuf-lite.cmake
