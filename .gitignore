@@ -14,5 +14,6 @@
 *.vs
 *.ilk
 *.VC.db
+*.dir
 /.vs
 /intermediate
